@@ -1,15 +1,27 @@
 from module1 import *
 while True:
     print("funksioind".center(50,"+"))
-    print("arithmetic- A,\nis_year_leap-Y")
-    print("square")
-    v=input("arithmetic- A")
+    v=input("arithmetic- A, \nis_year_leap- B, \nsquare- C, \nseason- D \nBank-E")
     if v.upper()=="A":
         a=float(input("esimene arv"))
         b=float(input("teine arv"))
         sym=input("Tehe:")
         rezult=arithmetic(a,b,sym)
         print(rezult)
-    elif v.upper()=="Y":
-        is_year_leap()
-        rezolut=is_year_leap((int(input("sisesta aasta"))))
+    elif v.upper()=="B":
+        year=int(input("sisesta aasta"))
+        rezolut=is_year_leap(year)
+        print(rezolut)
+    elif v.upper()=="C":
+        kv=int(input("Sisesta ruudi külg:"))
+        resul=square(kv)
+        print(result)
+    elif v.upper()=="D":
+        a=int(input("Sisestage kuu"))
+        result=Aastajad(a)
+        print(result)
+    elif v.upper()=="E":
+        a=int(input("sisesta aasta"))
+        b=int(input("sisesta money"))
+        result=Bank(a,b)
+        print(result)

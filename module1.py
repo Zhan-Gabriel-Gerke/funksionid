@@ -1,3 +1,4 @@
+from math import *
 def arithmetic(a: float,b:float,c:str):
     """Lihtne kalkulaator
     +-liitmine
@@ -50,4 +51,29 @@ def square():
     return p
     return s
     return f
-    
+def Aastajad(a:int):
+    """эта функция определяет время года по его месяцу
+    :parem float a месяц
+    :rtype float:"""
+    if a==12:
+        print("Зима")
+    elif 0<a<3:
+        print("Зима")
+    elif 2<a<6:
+        print("Весна")
+    elif 5<a<9:
+        print("Лето")
+    elif 8<a<12:
+        print("Осень")
+    else:
+        print("Viga!")
+    return("")
+def Bank(a:int,b:int):
+    """
+    эта функция показывает сумму вклада
+    """
+    for x in range(b):
+        c=a*1,1
+        print(c("sinu money"))
+        return()
+        
