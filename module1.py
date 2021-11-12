@@ -98,7 +98,7 @@ def xor_uncipher(string:str, key: str)->str:
             temp[i] = chr(ord(key[j]) ^ ord(temp[i]))
         result += temp[i]
     return result
-def date(day:int, month:int, year:int):
+def date(a:int, b:int, c:int):
     """kuupäeva funktsioon võtab 3 argumenti päev, kuu ja aasta. Tagasta True, kui selline kuupäev on meie kalendris olemas, ja False muul juhul.
     """
     set_b = {1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
@@ -110,7 +110,7 @@ def date(day:int, month:int, year:int):
     else:
         return False
 def is_prime(a:int):
-    """sisestage arv vahemikus 0 kuni 1000 ja tagastage True, kui see on lihtne, ja False, kui see on lihtne.
+    """kirjutad arvu vahemikus 0 kuni 1000 ja sulle antakse algarvu kas see on lihtne kui see on lihtne siis see on tõsi.
     """
     b=2
     while a%b!=0:
