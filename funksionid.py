@@ -13,16 +13,16 @@ while True:
         rezolut=is_year_leap(year)
         print(rezolut)
     elif v.upper()=="C":
-        kv=int(input("Sisesta ruudi külg:"))
-        resul=square(kv)
+        kv=int(input("Sisestage ruudu külg: "))
+        result=square(kv)
         print(result)
     elif v.upper()=="D":
         a=int(input("Sisestage kuu"))
         result=Aastajad(a)
         print(result)
     elif v.upper()=="E":
-        a=int(input("sisesta aasta"))
-        b=int(input("sisesta money"))
+        a=float(input("money: "))
+        b=int(input("aasta"))
         result=bank(a,b)
         print(result)
     elif v.upper()=="X":

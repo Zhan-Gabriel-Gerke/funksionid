@@ -23,12 +23,11 @@ def arithmetic(a: float,b:float,c:str):
             r=0.0
     else:
         print("viga")
-    print(r)
     return r
 def is_year_leap(aasta: int):
     """Liigaasta leidmine
     Tagastab true kui aasta on liigasta ja Flase kui ei ole 
-    :parem int aasta: Aasata number 
+    :parem int a: Aasata number 
     :rtype bool: Funksionid vastus loogilised formaadis
     """
     if aasta%4==0:
@@ -36,24 +35,17 @@ def is_year_leap(aasta: int):
     else:
         vastus=False
     return vastus 
-def square():
+def square(kv:float):
+    """Kirjutame ruudu külje ja programm annab meile ruudu pindala, perimeetri ja diagonaali
+     :param int kv:esimene arv
+    :rtype float
     """
-    Она вычисляет переметр квадрата, площадь квадрата, диогональ квадрата
-    """
-    a=float(input("sisesta a"))
-    p=a*4
-    s=a**2
-    f=a.sqrt+a.sqrt
-    print("p",p)
-    print("s",s)
-    print("диагональ",f)
-    return a
-    return p
-    return s
-    return f
+
+    return(4*kv, kv**2, (2*kv**2)**.5)
+    return("")
 def Aastajad(a:int):
-    """эта функция определяет время года по его месяцу
-    :parem float a месяц
+    """see funktsioon määrab aastaaja kuu järgi
+    :parem float kuu
     :rtype str:"""
     if a==12 or 0<a<3:
         res="Зима"
@@ -68,15 +60,15 @@ def Aastajad(a:int):
     else:
         res="Viga!"
     return res
-def Bank(a:int,b:int):
-    """paneme raha bilanssi ja ootame mitu aastat
-    :param float a: Esimene number
-    :param float years: Teine number
-    :rtüüp ujuk
+def bank(a:float,b:int):
+    """Мы кладем деньги на баланс и ждем n лет
+    :param float a:Esimene arv
+    :param float years: Teine arv
+    :rtype float
     """
-    for _ in range(a):
+    for _ in range(b):
         a=((1.1*1/100)*a)*100
-    print("sinu balance:",a)
+    print("sinu balance:", a)
     return("")
 def xor_cipher(string:str, key:str)->str:
     """Tavaline sõna kodeeritakse
