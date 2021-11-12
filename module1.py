@@ -74,6 +74,45 @@ def Bank(a:int,b:int):
     """
     for x in range(b):
         c=a*1,1
-        print(c("sinu money"))
-        return()
-        
+    print(c("sinu money"))
+    return()
+def xor_cipher(string:str, key:str)->str:
+    """Tavaline sõna kodeeritakse
+    """
+    result=""
+    temp = int()
+    for i in range(len(string)):
+        temp = ord(string[i])#näitab sümboli kood
+        for j in range(len(key)):
+            temp ^=ord(key[j])
+        result += chr(temp)
+    return result 
+def xor_uncipher(string:str, key: str)->str:
+    """koderiumine text dekodeeritakse
+    """
+    result = ""
+    temp = []
+    for i in range(len(string)):
+        temp.append(string[i])
+        for j in reversed(range(len(key))):
+            temp[i] = chr(ord(key[j]) ^ ord(temp[i]))
+        result += temp[i]
+    return result
+def date(day:int, month:int, year:int):
+    """kuupäeva funktsioon võtab 3 argumenti päev, kuu ja aasta. Tagasta True, kui selline kuupäev on meie kalendris olemas, ja False muul juhul.
+    """
+    set_months = {1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
+    if year>0 and (month>=1 and month<=12):
+        if day in range(1, set_months[month]+1):
+           return True
+        else:
+            return False
+    else:
+        return False
+def is_prime(a:int):
+    """sisestage arv vahemikus 0 kuni 1000 ja tagastage True, kui see on lihtne, ja False, kui see on lihtne.
+    """
+    b=2
+    while a%b!=0:
+        b+=1
+    return b==a
