@@ -23,7 +23,7 @@ while True:
     elif v.upper()=="E":
         a=int(input("sisesta aasta"))
         b=int(input("sisesta money"))
-        result=Bank(a,b)
+        result=bank(a,b)
         print(result)
     elif v.upper()=="X":
         print("kodeeriumine".center(60,"*"))

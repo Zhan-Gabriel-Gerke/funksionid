@@ -54,30 +54,34 @@ def square():
 def Aastajad(a:int):
     """эта функция определяет время года по его месяцу
     :parem float a месяц
-    :rtype float:"""
-    if a==12:
-        print("Зима")
+    :rtype str:"""
+    if a==12 or 0<a<3:
+        res="Зима"
     elif 0<a<3:
-        print("Зима")
+        res="Зима"
     elif 2<a<6:
-        print("Весна")
+        res="Весна"
     elif 5<a<9:
-        print("Лето")
+        res="Лето"
     elif 8<a<12:
-        print("Осень")
+        res="Осень"
     else:
-        print("Viga!")
-    return rez
+        res="Viga!"
+    return res
 def Bank(a:int,b:int):
+    """paneme raha bilanssi ja ootame mitu aastat
+    :param float a: Esimene number
+    :param float years: Teine number
+    :rtüüp ujuk
     """
-    эта функция показывает сумму вклада
-    """
-    for x in range(b):
-        c=a*1,1
-    print(c("sinu money"))
-    return()
+    for _ in range(a):
+        a=((1.1*1/100)*a)*100
+    print("sinu balance:",a)
+    return("")
 def xor_cipher(string:str, key:str)->str:
     """Tavaline sõna kodeeritakse
+    :param str string: Esimene arv
+    :param str key: Teine arv
     """
     result=""
     temp = int()
@@ -89,6 +93,8 @@ def xor_cipher(string:str, key:str)->str:
     return result 
 def xor_uncipher(string:str, key: str)->str:
     """koderiumine text dekodeeritakse
+    :param str string: Esimene arv
+    :param str key: Teine arv
     """
     result = ""
     temp = []
@@ -100,6 +106,9 @@ def xor_uncipher(string:str, key: str)->str:
     return result
 def date(a:int, b:int, c:int):
     """kuupäeva funktsioon võtab 3 argumenti päev, kuu ja aasta. Tagasta True, kui selline kuupäev on meie kalendris olemas, ja False muul juhul.
+    :param int a: Esimene arv
+    :param int b: Teine arv
+    :param int c: Kolmas arv
     """
     set_b = {1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
     if c>0 and (b>=1 and b<=12):
@@ -111,6 +120,8 @@ def date(a:int, b:int, c:int):
         return False
 def is_prime(a:int):
     """kirjutad arvu vahemikus 0 kuni 1000 ja sulle antakse algarvu kas see on lihtne kui see on lihtne siis see on tõsi.
+    :param int a:Esimene arv
+    :rtype str
     """
     b=2
     while a%b!=0:
