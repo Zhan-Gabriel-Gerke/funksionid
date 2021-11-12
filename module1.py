@@ -67,7 +67,7 @@ def Aastajad(a:int):
         print("Осень")
     else:
         print("Viga!")
-    return("")
+    return rez
 def Bank(a:int,b:int):
     """
     эта функция показывает сумму вклада
