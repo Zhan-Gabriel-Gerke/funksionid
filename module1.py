@@ -101,9 +101,9 @@ def xor_uncipher(string:str, key: str)->str:
 def date(day:int, month:int, year:int):
     """kuupäeva funktsioon võtab 3 argumenti päev, kuu ja aasta. Tagasta True, kui selline kuupäev on meie kalendris olemas, ja False muul juhul.
     """
-    set_months = {1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
-    if year>0 and (month>=1 and month<=12):
-        if day in range(1, set_months[month]+1):
+    set_b = {1: 31,2: 28, 3: 31,4: 30,5: 31,6: 30,7: 31,8: 31,9: 30,10: 31,11: 30,12: 31}
+    if c>0 and (b>=1 and b<=12):
+        if a in range(1, set_b[b]+1):
            return True
         else:
             return False

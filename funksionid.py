@@ -33,10 +33,10 @@ while True:
         de_rezult=xor_uncipher(rezult, input("sisesta võti:"))
         print(de_rezult)
     elif v.upper()=="H":
-        day=int(input("Sisestage päev: "))
-        month=int(input("Sisestage kuu: "))
-        year=int(input("Sisestage aasta: "))
-        result=date(day,month,year)
+        a=int(input("Sisestage päev: "))
+        b=int(input("Sisestage kuu: "))
+        c=int(input("Sisestage aasta: "))
+        result=date(a,b,c)
         print(result)
     elif v.upper()=="K":
         a=int(input("Sisestage number: "))
